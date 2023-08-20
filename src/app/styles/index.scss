@@ -1,0 +1,12 @@
+@import "./vars.scss";
+@import "./reset.scss";
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
