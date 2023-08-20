@@ -1,0 +1,18 @@
+.template {
+	&__header {
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		flex: 1 0 auto;
+	}
+
+	&__section {
+		flex: 1 0 auto;
+	}
+
+	&__footer {
+		flex-shrink: 0;
+	}
+}
