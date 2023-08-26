@@ -1,0 +1,58 @@
+.button {
+  --cursor: pointer;
+	--padding: none;
+  --color: none
+	--background: none;
+	--border: none;
+  --hover-color: none;
+	--hover-background: none;
+	--hover-border: none;
+	--active-color: none;
+	--active-background: none;
+	--active-border: none;
+
+
+  cursor: var(--cursor);
+  color: var(--color);
+	background: var(--background);
+	border: var(--border);
+	border-radius: 3px;
+
+	padding: var(--padding);
+	will-change: color, background, border;
+	transition: color 0.25s ease-in, background 0.25s ease-in, border 0.25s ease-in;
+
+	&:hover {
+    color: var(--hover-color);
+		background: var(--hover-background);
+		border: var(--hover-border);
+	}
+
+	&:active {
+    color: var(--active-color);
+		background: var(--active-background);
+		border: var(--active-border);
+	}
+
+	&[data-active='true'] {
+		color: var(--active-color);
+		background: var(--active-background);
+		border: var(--active-border);
+	}
+
+	&[data-shape="outlined"][data-variant="black"] {
+    --color: black;
+		--background: transparent;
+		--border: 1px solid black;
+    --hover-color: white;
+		--hover-background: black;
+		--hover-border: 1px solid black;
+		--active-color: white;
+		--active-background:  black;
+		--active-border: 1px solid black;
+	}
+
+	&[data-size="md"] {
+		--padding: 5px 10px;
+	}
+}
