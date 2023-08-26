@@ -12,7 +12,15 @@
 		flex: 1 0 auto;
 	}
 
+	&__container {
+		width: 100%;
+		max-width: var(--max-width);
+		height: 100%;
+
+		margin: 0 auto;
+	}
+
 	&__footer {
-		flex-shrink: 0;
+		flex-shrink: 1;
 	}
 }
