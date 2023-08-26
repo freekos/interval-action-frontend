@@ -1,0 +1,11 @@
+.card {
+	--padding: 10px 15px;
+	--background: white;
+	--border: 1px solid black;
+
+	padding: var(--padding);
+
+	background: var(--background);
+	border: var(--border);
+	border-radius: 3px;
+}
