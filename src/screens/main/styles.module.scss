@@ -14,6 +14,29 @@
 
 	&__head {
 		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		width: 650px;
+		max-width: 100%;
+
+		margin: 20px auto 40px auto;
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: black;
+	}
+
+	&__description {
+		font-size: 0.9rem;
+		font-weight: 500;
+		color: gray;
+	}
+
+	&__header {
+		display: flex;
 		justify-content: space-between;
 		width: 100%;
 		max-width: var(--max-width);
