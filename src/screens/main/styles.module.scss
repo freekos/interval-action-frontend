@@ -150,6 +150,8 @@
 	}
 
 	&__item {
+		display: flex;
+		gap: 20px;
 		width: 100%;
 
 		padding: 10px 20px;

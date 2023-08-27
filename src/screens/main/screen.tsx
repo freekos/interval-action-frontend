@@ -155,8 +155,9 @@ export function MainScreen() {
 									</div>
 									<Divider />
 									<div className={styles.task__wrapper}>
-										{currentInterval.tasks.map((task, index) => (
+										{currentInterval.tasks.map((task, index, array) => (
 											<Card key={index} className={styles.task__item}>
+												<p>{array.length - index}.</p>
 												<p>{task.value}</p>
 											</Card>
 										))}
