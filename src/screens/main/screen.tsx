@@ -87,15 +87,14 @@ export function MainScreen() {
 		<Template.Main>
 			<Template.Section className={styles.hero}>
 				<Template.Container>
-					<div className={styles.hero__head}>
-						<h1 className={styles.hero__title}>Time Action</h1>
-						<p className={styles.hero__description}>
-							Is a time interval monitoring application that can integrate with different task
-							managers(Notion, Trello, etc.) and analyze your actions
-						</p>
-					</div>
-
 					<div className={styles.hero__wrapper}>
+						<div className={styles.hero__head}>
+							<h1 className={styles.hero__title}>Time Action</h1>
+							<p className={styles.hero__description}>
+								Is a time interval monitoring application that can integrate with different task
+								managers(Notion, Trello, etc.) and analyze your actions
+							</p>
+						</div>
 						<header className={styles.hero__header}>
 							{currentInterval ? (
 								<TimeView
